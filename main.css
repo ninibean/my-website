@@ -1,0 +1,96 @@
+
+.title {
+    font-size: 45px;
+    position: center;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+  
+#footer {
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    white-space: nowrap;
+    z-index: -1;
+    height: 2.5rem;            /* Footer height */
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid grey; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: grey }
+}
+
+.background { 
+    background:  url(galaxy.gif) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+body {
+    background-color: mediumpurple;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+
+h2 {
+    background-color: mediumpurple;
+    color: lightyellow;
+}
+
+p {
+    font-size: 20px;
+    width: 70%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+a {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+img {
+    width: 19%;
+    height: 50%;
+}
