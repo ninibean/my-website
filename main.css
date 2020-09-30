@@ -14,22 +14,22 @@
 
 #page-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 92vh;
 }
-  
+
 #content-wrap {
     padding-bottom: 2.5rem;    /* Footer height */
 }
   
+  
 #footer {
-    position: fixed;
-    left: 50%;
-    bottom: 0px;
-    transform: translate(-50%, -50%);
+    position: relative;
+    overflow: auto;
+    text-align: center;
+    height: 50px;
+    bottom: 0;
+    left: 15%;
     margin: 0 auto;
-    white-space: nowrap;
-    z-index: -1;
-    height: 2.5rem;            /* Footer height */
 }
 
 .typewriter h1 {
@@ -56,13 +56,15 @@
 }
 
 .background { 
-    background:  url(galaxy.gif) no-repeat center center fixed; 
+    background:  url(space.gif) no-repeat center center fixed; 
     background-size: cover;
 }
 
 body {
     background-color: mediumpurple;
     margin: 0;
+    position: relative;
+    overflow: auto;
 }
 
 h1 {
@@ -93,4 +95,10 @@ a {
 img {
     width: 19%;
     height: 50%;
+}
+
+h4 {
+    color: purple;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
